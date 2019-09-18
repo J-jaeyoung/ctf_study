@@ -1,0 +1,11 @@
+<fd>
+setuid비트: set되어있으면 실 사용자에서 프로그램 소유자의 ID로  유효사용자(EUID)가 변경됨 
+            -> 일반 사용자가 프로그램 실행중에만 root권한을 얻을 수 있음
+
+실행파일의 소유자'실행' 권한에 s
+'chmod u+s setuid2' or 'chmod 4777 setuid2'
+
+
+int fd = atoi( argv[1] ) - 0x1234;
+        int len = 0;
+        len = read(fd, buf, 32);
