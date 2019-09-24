@@ -46,7 +46,7 @@ info address [function name]
 
 
 i r $esp $ebp
-`esp와 ebp의 값만 보여줌`
+`esp와 ebp의 값만 보여줌`  
 
 ----------------------------------
 
