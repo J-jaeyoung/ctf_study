@@ -44,6 +44,10 @@ print [Variable Name | Expression]
 info address [function name]
 `특정 function의 메모리 주소를 출력`
 
+----------------------------------
+
+i r $esp $ebp
+`esp와 ebp의 값만 보여줌`
 
 ----------------------------------
 
