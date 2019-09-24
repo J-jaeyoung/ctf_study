@@ -2,10 +2,10 @@
 
 
 set disassembly-flavor intel
-`%eax로 보임`
+`eax로 보임(OllyDbg로 볼 때 처럼)`
 
 set disassembly-flavor att
-`eax로 보임`
+`$eax로 보임`
 
 
 disas [함수 이름]
