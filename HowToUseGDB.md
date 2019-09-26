@@ -17,7 +17,7 @@ gdb 실행 후 run 명령 시 user input
 (gdb)r<<<"AAA"
 
 #두 명령어 실행 결과 비교
-(gdb)diff < (cmd) << (cmd)
+$ diff < (cmd) << (cmd)
 ```
 
 set disassembly-flavor intel
