@@ -6,7 +6,7 @@ gdb 실행 후 run 명령 시 user input
 (gdb) r < filename
 
 #임시 파일에 저장 후 입력
-(gdb) r `python -c 'print "0"*5+"\xFF\xFF\xFF\xFF" > tmp` < tmp
+(gdb) r `python -c 'print "0"*5+"\xFF\xFF\xFF\xFF"' > tmp` < tmp
 (gdb) r `echo "000" > tmp` < tmp
 
 # 임시 파일을 만들지 않고
