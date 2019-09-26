@@ -1,5 +1,24 @@
 # GDB 사용법 정리
 
+gdb 실행 후 run 명령 시 user input
+```
+#이미 존재하는 파일
+(gdb) r < filename
+
+#임시 파일에 저장 후 입력
+(gdb) r `python -c 'print "0"*5+"\xFF\xFF\xFF\xFF" > tmp` < tmp
+(gdb) r `echo "000" > tmp` < tmp
+
+# 임시 파일을 만들지 않고
+(gdb) r < <(python -c 'print "A"*10')
+
+#문자열
+(gdb)r<<<$(python -c 'print "A"*3')
+(gdb)r<<<"AAA"
+
+#두 명령어 실행 결과 비교
+(gdb)diff < (cmd) << (cmd)
+```
 
 set disassembly-flavor intel
 `eax로 보임(OllyDbg로 볼 때 처럼)`
