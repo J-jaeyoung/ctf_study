@@ -8,6 +8,14 @@ gdb 실행 후 run 명령 시 user input
 #임시 파일에 저장 후 입력
 (gdb) r `python -c 'print "0"*5+"\xFF\xFF\xFF\xFF"' > tmp` < tmp
 (gdb) r `echo "000" > tmp` < tmp
+#표준 입력으로 줄 때
+(gdb) r < <(python -c 'print "DUMMY" + "PAYLOAD"') 
+#인자로 입력 줄 때
+(gdb) r `python -c 'print "DUMMY" + "PAYLOAD"'`    #\x00을 주면 받지 못함
+
+
+
+출처: https://chp747.tistory.com/216 [만두만두]
 
 # 임시 파일을 만들지 않고
 (gdb) r < <(python -c 'print "A"*10')
