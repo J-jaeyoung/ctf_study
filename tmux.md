@@ -3,7 +3,9 @@
 
 
 새로운 pane 생성
-$ <CTRL-B> %  
+$ <CTRL-B> %      #선  
+$ <CTRL-B> "      #가로선
+
 
 현재 pane 종료
 $ <CTRL-B> x 
