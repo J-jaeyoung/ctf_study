@@ -1,4 +1,4 @@
-'''
+```
 (* tmux *)
 
 
@@ -34,3 +34,4 @@ $ <CTRL-B> attach
 
 tmux 전체 종료
 $ tmux kill-session -t 0
+```
